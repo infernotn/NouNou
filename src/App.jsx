@@ -85,7 +85,7 @@ function App() {
     return (
         <>
             {/* Background music: place your file in public/love.mp3 */}
-            <audio ref={bgAudioRef} id="bgAudio" src="/love.mp3" preload="auto" />
+            <audio ref={bgAudioRef} id="bgAudio" src={import.meta.env.BASE_URL + 'love.mp3'} preload="auto" />
             <ParticleSystem isCelebrated={isCelebrated} />
 
             {/* SCREEN 1: MEMORY MATCHING GAME */}

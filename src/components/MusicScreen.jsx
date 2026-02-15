@@ -140,7 +140,7 @@ export const MusicScreen = ({ isActive, onContinue }) => {
 
                 {/* Render an internal audio element only if global bgAudio is not present */}
                 {!usesGlobalAudio && (
-                    <audio ref={audioRef} id="bgSound" src="/love.mp3" preload="auto" />
+                    <audio ref={audioRef} id="bgSound" src={import.meta.env.BASE_URL + 'love.mp3'} preload="auto" />
                 )}
             </div>
         </div>
